@@ -1,0 +1,24 @@
+
+<div class="card" style="width: 21rem;">
+    <a  routerLink="/artwork/{{arts.id}}"  style="text-decoration: none; color: black;">
+        <div>
+            <img style="min-width: 21rem; width: 21rem; height: 25rem; " [src]='getImage(arts.image_id)' alt="">
+        </div>
+    </a>
+    <div class="card-body">
+      <h5 class="card-title" style="font-weight: bold; font-size: large;">{{arts.title}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{arts.date_start}}</li>
+      <li class="list-group-item"><b>{{arts.artist_title }}</b></li>
+    </ul>
+    <div class="card-body">
+        <button mat-icon-button (click)="addToFavourites(arts.id)" aria-label="heart icon" >
+            <mat-icon *ngIf="isAdded" color="warn">favorite</mat-icon>
+            <mat-icon *ngIf="!isAdded">favorite</mat-icon>
+        </button>
+    </div>
+  </div>
+
+
+<router-outlet></router-outlet>

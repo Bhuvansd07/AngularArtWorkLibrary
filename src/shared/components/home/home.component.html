@@ -1,0 +1,40 @@
+
+<div class="home">
+    <app-loader *ngIf="isLoading"></app-loader>
+    <img *ngIf="!isLoading" src="../../../assets/Img/Hero. Mobile App_Nighthawks_WEB72dpi.jpg" alt="" class="home-img" width="100%" style="min-width: 340px ; height: 110vh;"/>
+
+    <div class="details overflow-hidden pb-4" >
+        <div>
+            <h2 class="p-0 m-0">“There is nothing more truly artistic than to love people.”</h2>
+            <div class="p-0 m-0">
+                -
+                <b>Vincent Van Gogh</b>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-more d-flex flex-column align-items-center justify-content-center">
+
+    <!-- <p class="about-more-us text-center fs-1 my-5">About Us</p> -->
+    <div class="d-flex flex-row flex-wrap align-items-center justify-content-center ">
+        <div class="mx-5"><img
+                src="https://www.artic.edu/iiif/2/{{
+                    this.arts[1].image_id
+                  }}/full/843,/0/default.jpg"
+                alt="" width="300px" height="400px">
+        </div>
+        <div class=" fs-4 lh-base" style="width: 65%;">
+            <p class="title m-0 fw-bold font-sabon fs-2 lh-sm">{{arts[1].title}} - {{arts[1].date_start}}</p>
+            <h2>by <i>{{arts[1].artist_title}}</i></h2>
+            <p>Artwork Type: <i>{{arts[1].artwork_type_title}}</i></p>
+            <h4><b>Category:</b> {{arts[1].category_titles}}</h4>
+            <p class="about-data m-0 p-0">
+                {{arts[1].description |
+                    slice:3:-5}}
+            </p>
+        </div>
+    </div>
+</div>
+<div class="fs-2 mb-5 me-5" style="min-height: 5rem; display: flex;  justify-content: end;">
+    <a routerLink="/art-collection" style="letter-spacing: 0.20vh; color: #b50938;">See Whole Collection >>></a>
+</div>

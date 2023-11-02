@@ -1,0 +1,52 @@
+<!-- <div>hey</div> -->
+<header class="header m-0 p-0">
+  <!-- <nav class=" navigation d-flex align-items-center justify-content-between">
+    <div class="art-chicago">
+      <a class="about w-50" href=""><img class="logo"
+          src="https://www.grenzebachglier.com/wp-content/uploads/2016/08/art-institute-chicago-logo.png" alt="">About
+        Us</a>
+    </div>
+    
+    <div class="more-navi collapse d-flex flex-row justify-content-end align-items-center me-3 w-50">
+      <a id="routing" class="route-link shadow-2" routerLink="/art-collection">The Collection</a>
+      <a class="route-link text-white shadow-2" routerLink="/favourites"><img
+          src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/512/favourite512x512.png" alt="Favourites" style="width:50px;"/>
+      </a>
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg p-0 mb-5 ">
+    <div class="container-fluid navigation d-flex justify-content-between">
+      <div>
+        <a class="about w-50" href=""><img class="logo"
+            src="https://www.grenzebachglier.com/wp-content/uploads/2016/08/art-institute-chicago-logo.png" alt="">
+        </a>
+        <a routerLink="/docs" class="documentation ms-2" style="max-width: 400px;"> Docs</a>
+      </div>
+      <div class="d-flex flex-column justify-content-end align-items-center">
+        <button class="navbar-toggler my-5 p-0 me-4" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation" style="width: 30px;">
+          <span class="navbar-toggler-icon w-75"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <ul class="navbar-nav me-4 mb-2 mb-lg-0 d-flex align-items-center" style="position: absolute; right:8px">
+            <li class="nav-item" >
+              <a id="routing" class="route-link shadow-2" routerLink="/art-collection" style="color: #fff;">The Collection</a>
+            </li>
+            <li class="nav-item ms-3 "  >
+              <a class="route-link text-white shadow-2" routerLink="/favourites" style="text-decoration: none;"><img
+                  src="https://cdn2.iconfinder.com/data/icons/color-doodle-wedding/32/circle_doodle_heart_plate_shape_valentine_favorite_button-1024.png"
+                  alt="Favourites" style="width:40px;" />
+                  Fav
+              </a>
+              
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>
